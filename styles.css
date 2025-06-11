@@ -30,7 +30,7 @@ h2{
 
 body {
     font-family: 'newsreader-italics', sans-serif;
-    color: #2596be;; 
+    color: #2596be;
     font-size: 3rem;
     text-align: center;
     display: flex;
@@ -59,8 +59,28 @@ nav {
     z-index: 1000;
 }
 
+.image-container{
+    width: 250px;
+    height:auto; 
+    top: 100px;
+    right: 200px;
+    z-index:2;
+    position:fixed;
+
+
+}
+
+.selfie-sticker {
+    max-height: 150px; 
+    max-width: 150px; 
+    width: 100%; 
+    height: auto; 
+    transform: rotate(-10deg);
+}
+
+
 a:link, a:visited {
-    color: blue; /* Or any color you prefer */
+    color: #2596be;; 
     text-decoration: none; /* Optional: Remove the underline */
   }
 
