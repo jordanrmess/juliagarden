@@ -9,14 +9,7 @@
     object-fit: cover;
     z-index: -1; 
 }
-h1{
-    margin: 0;
-    padding: 10px 0;
-}
-h2{
-    margin: 0;
-    padding: 5px 0;
-}
+
 
 @font-face {
     font-family: 'newsreader-italics';
@@ -31,7 +24,6 @@ h2{
 body {
     font-family: 'newsreader-italics', sans-serif;
     color: #2596be;
-    font-size: 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -42,14 +34,11 @@ body {
 }
 
 .subtitle {
-    font-size: 2rem;
     font-family: 'newsreader', sans-serif;
-
 }
 
 nav {
     font-family: 'newsreader', sans-serif;
-    font-size: 1.5rem;
     position: fixed;
     top: 0;
     left: 0;
