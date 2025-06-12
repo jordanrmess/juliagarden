@@ -3,19 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Add  CSS files here -->
-    <link rel="stylesheet" href="styles.css" />
+    <title>Julia Zone</title>
+    <link rel="icon" href="media/pencil-favicon.png" type="image/x-icon" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="fiction.html">fiction</a></li>
-        <li><a href="#the bob">the bob</a></li>
-        <li><a href="#blackstack">blackstack</a></li>
-        <li><a href="#festival">festival</a></li>
+    <nav class="p-4">
+      <ul class="flex justify-center space-x-4">
+        <li>
+          <a class="text-white hover:underline" href="fiction.html">fiction</a>
+        </li>
+        <li>
+          <a class="text-white hover:underline" href="#the bob">the bob</a>
+        </li>
+        <li>
+          <a class="text-white hover:underline" href="#blackstack"
+            >blackstack</a
+          >
+        </li>
+        <li>
+          <a class="text-white hover:underline" href="#festival">festival</a>
+        </li>
+        <li>
+          <a class="text-white hover:underline" href="#childrens">children's</a>
+        </li>
       </ul>
     </nav>
+    <div class="grid grid-cols-2 gap-4 m-15">
+      <div>
+        <h1 class="text-4xl font-medium text-left mb-6">
+          I write short fiction about economics, status, family, and
+          relationships.
+        </h1>
+        <h3 class="font-(family-name:newsreader) text-2xl font-light text-left">
+          I’ve studied and workshopped at Columbia University and the University
+          of Toronto.
+        </h3>
+        <p class="text-1xl font-light text-left mt-6">
+          <a href="https://phwoarmag.wordpress.com/2024/02/08/eunice/"
+            >Eunice</a
+          >
+          (2024) was published in Phwoar! Magazine.
+        </p>
+      </div>
+      <div>test</div>
+    </div>
+
     <img
       src="media/paper.jpg"
       alt="Full Screen Image"
