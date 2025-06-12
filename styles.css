@@ -24,10 +24,6 @@
 body {
     color: #2596be;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh; 
 }
 
@@ -45,29 +41,10 @@ nav {
     z-index: 1000;
 }
 
-.image-container{
-    width: 250px;
-    height:auto; 
-    top: 100px;
-    right: 200px;
-    z-index:2;
-    position:fixed;
-
-
-}
-
-.selfie-sticker {
-    max-height: 150px; 
-    max-width: 150px; 
-    width: 100%; 
-    height: auto; 
-    transform: rotate(-10deg);
-}
 
 
 a:link, a:visited {
     color: #2596be;
-    text-decoration: none; /* Optional: Remove the underline */
   }
 
 nav ul {
