@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 .fullscreen-image {
     position: fixed;
     top: 0;
@@ -23,10 +21,6 @@
     src: url('fonts/Newsreader-VariableFont_opsz,wght.ttf') format('opentype');
 }
 
-h1{ 
-    font-family:'newsreader-italics';
-}
-
 body {
     color: #2596be;
     text-align: center;
@@ -35,7 +29,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    margin: 0; 
 }
 
 .subtitle {
@@ -74,6 +67,7 @@ nav {
 
 a:link, a:visited {
     color: #2596be;
+    text-decoration: none; /* Optional: Remove the underline */
   }
 
 nav ul {
@@ -93,9 +87,16 @@ nav ul li {
     margin: 0 15px; 
 }
 
+nav ul li a {
+    text-decoration: none; 
+}
 
 
 header {
     text-align: center;
+}
+
+h1{
+    font-family: 'newsreader-italics';
 }
 
