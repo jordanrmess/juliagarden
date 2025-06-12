@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .fullscreen-image {
     position: fixed;
     top: 0;
@@ -80,7 +82,7 @@ nav {
 
 
 a:link, a:visited {
-    color: #2596be;; 
+    color: #2596be;
     text-decoration: none; /* Optional: Remove the underline */
   }
 
@@ -93,7 +95,8 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between nav items */
+    margin: 0 15px; 
+
 }
 
 nav ul li {
