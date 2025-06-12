@@ -23,6 +23,10 @@
     src: url('fonts/Newsreader-VariableFont_opsz,wght.ttf') format('opentype');
 }
 
+h1{ 
+    font-family:'newsreader-italics';
+}
+
 body {
     color: #2596be;
     text-align: center;
