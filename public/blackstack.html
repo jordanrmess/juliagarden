@@ -8,86 +8,85 @@
     <link href="../output.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
-  <body>
+  <body class="md:overflow-hidden">
     <div class="relative min-h-screen overflow-hidden">
-      <nav class="p-4">
-        <ul class="flex justify-center space-x-4">
-          <li>
-            <a class="text-white hover:underline" href="../index.html">home</a>
-          </li>
-          <li>
-            <a class="text-white hover:underline" href="fiction.html"
-              >fiction</a
-            >
-          </li>
-          <li>
-            <a class="text-white hover:underline" href="bob.html">the bob</a>
-          </li>
-          <li>
-            <a class="text-white hover:underline" href="blackstack.html"
-              >black stack</a
-            >
-          </li>
-          <li>
-            <a class="text-white hover:underline" href="festival.html"
-              >festival</a
-            >
-          </li>
-          <li>
-            <a class="text-white hover:underline" href="children.html"
-              >children's</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="grid md:grid-cols-2 gap-4 m-16">
-        <div class="mt-64">
-          <h1 class="text-4xl font-medium text-left mb-6">
-            Black Stack is a play about online relationships.
-          </h1>
-          <h3
-            class="font-(family-name:newsreader) text-2xl font-light text-left"
+      <div class="absolute inset-0 flex flex-col px-4">
+        <nav class="p-8">
+          <ul
+            class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm tracking-wider"
           >
-            I wrote Black Stack in 2022. It was performed in the Lorne Michaels
-            Theatre.
-          </h3>
-          <p class="text-1xl font-light text-left mt-6">
-            Black Stack was a Toronto Spotlight Playwriting Contest finalist. It
-            won a University of Toronto Drama Festival Award of Merit.
-          </p>
+            <li>
+              <a class="text-white px-3 py-1" href="../index.html">home</a>
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./fiction.html">fiction</a>
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./bob.html">the bob</a>
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./blackstack.html"
+                >black stack</a
+              >
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./festival">festival</a>
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./childrens">children's</a>
+            </li>
+          </ul>
+        </nav>
 
-          <p class="text-1xl font-light text-left mt-6">
-            You can read an excerpt
-            <a
-              class="underline"
-              href="https://drive.google.com/file/d/1WSWNAWcVmHn5MtmXFWk2DUgVwb_XV3yf/view?usp=drive_link"
-              target="_blank"
-              >here</a
+        <div class="grid md:grid-cols-2 gap-4 m-16">
+          <div class="mt-64">
+            <h1 class="text-4xl font-medium text-left mb-6">
+              Black Stack is a play about online relationships.
+            </h1>
+            <h3
+              class="font-(family-name:newsreader) text-2xl font-light text-left"
             >
-          </p>
-        </div>
-        <div class="mt-20">
-          <div class="w-64 md:w-89 ml-10">
-            <div class="bg-white p-2 shadow-lg transform">
-              <img
-                class="w-full"
-                src="../julia garden images/blackstackwindow.PNG"
-              />
-            </div>
-          </div>
-          <div class="w-64 md:w-72 ml-20 not-even md:ml-40">
-            <div class="bg-white p-2 shadow-lg transform rotate-8">
-              <img class="w-full" src="../julia garden images/theatre.PNG" />
-            </div>
-          </div>
-        </div>
-      </div>
+              I wrote Black Stack in 2022. It was performed in the Lorne
+              Michaels Theatre.
+            </h3>
+            <p class="text-1xl font-light text-left mt-6">
+              Black Stack was a Toronto Spotlight Playwriting Contest finalist.
+              It won a University of Toronto Drama Festival Award of Merit.
+            </p>
 
-      <img
-        src="../media/paper.jpg"
-        alt="Full Screen Image"
-        class="fullscreen-image"
-      />
+            <p class="text-1xl font-light text-left mt-6">
+              You can read an excerpt
+              <a
+                class="underline"
+                href="https://drive.google.com/file/d/1WSWNAWcVmHn5MtmXFWk2DUgVwb_XV3yf/view?usp=drive_link"
+                target="_blank"
+                >here</a
+              >
+            </p>
+          </div>
+          <div class="mt-20">
+            <div class="w-64 md:w-89 ml-10">
+              <div class="bg-white p-2 shadow-lg transform">
+                <img
+                  class="w-full"
+                  src="../julia garden images/blackstackwindow.PNG"
+                />
+              </div>
+            </div>
+            <div class="w-64 md:w-72 ml-20 not-even md:ml-40">
+              <div class="bg-white p-2 shadow-lg transform rotate-8">
+                <img class="w-full" src="../julia garden images/theatre.PNG" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="../media/paper.jpg"
+          alt="Full Screen Image"
+          class="fullscreen-image"
+        />
+      </div>
     </div>
   </body>
 </html>
