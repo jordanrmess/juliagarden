@@ -184,12 +184,6 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .top-24 {
-    top: calc(var(--spacing) * 24);
-  }
-  .right-\[15\%\] {
-    right: 15%;
-  }
   .order-first {
     order: -9999;
   }
@@ -219,9 +213,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-28 {
-    width: calc(var(--spacing) * 28);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -293,9 +284,6 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
-  .pr-4 {
-    padding-right: calc(var(--spacing) * 4);
-  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -316,10 +304,6 @@
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
-  }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -360,11 +344,6 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
-    }
-  }
-  .md\:right-\[15\%\] {
-    @media (width >= 48rem) {
-      right: 15%;
     }
   }
   .md\:order-last {
