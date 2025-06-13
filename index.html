@@ -17,57 +17,63 @@
   </head>
   <body>
     <div class="relative min-h-screen overflow-hidden">
-      <nav class="p-8">
-        <ul class="flex justify-center space-x-8 text-sm tracking-wider">
-          <li>
-            <a class="text-white px-3 py-1" href="./index.html">home</a>
-          </li>
-          <li>
-            <a class="text-white px-3 py-1" href="./public/fiction.html"
-              >fiction</a
-            >
-          </li>
-          <li>
-            <a class="text-white px-3 py-1" href="./public/bob.html">the bob</a>
-          </li>
-          <li>
-            <a class="text-white px-3 py-1" href="./public/blackstack"
-              >blackstack</a
-            >
-          </li>
-          <li>
-            <a class="text-white px-3 py-1" href="./public/festival"
-              >festival</a
-            >
-          </li>
-          <li>
-            <a class="text-white px-3 py-1" href="./public/childrens"
-              >children's</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <header
-        class="text-center pr-4 flex flex-col items-center justify-center mt-64"
-      >
-        <h1 class="text-9xl font-light">i'm julia</h1>
-        <h2 class="mt-4 text-xl tracking-wide">
-          I write so you don't have to.
-        </h2>
-      </header>
-      <div class="absolute top-24 right-[15%] md:right-[15%] w-28 md:w-48">
-        <div class="bg-white p-2 shadow-lg transform rotate-6">
-          <img src="julia garden images/juliadrawing.JPG" class="w-full" />
-        </div>
+      <div class="absolute inset-0 flex flex-col px-4">
+        <nav class="p-8">
+          <ul
+            class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm tracking-wider"
+          >
+            <li>
+              <a class="text-white px-3 py-1" href="./index.html">home</a>
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./public/fiction.html"
+                >fiction</a
+              >
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./public/bob.html"
+                >the bob</a
+              >
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./public/blackstack"
+                >blackstack</a
+              >
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./public/festival"
+                >festival</a
+              >
+            </li>
+            <li>
+              <a class="text-white px-3 py-1" href="./public/childrens"
+                >children's</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <main
+          class="flex-grow flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16"
+        >
+          <div class="text-center md:text-left">
+            <h1 class="text-7xl md:text-9xl font-light">i'm julia</h1>
+            <h2 class="text-center mt-4 text-xl tracking-wide">
+              I write so you don't have to.
+            </h2>
+          </div>
+          <div class="w-40 md:w-48 order-first md:order-last">
+            <div class="bg-white p-2 shadow-lg transform rotate-6">
+              <img src="julia garden images/juliadrawing.JPG" class="w-full" />
+            </div>
+          </div>
+        </main>
+
+        <img
+          src="media/paper.jpg"
+          alt="Full Screen Image"
+          class="fullscreen-image"
+        />
       </div>
-      <!-- <div class="image-container">
-      <img class="selfie-sticker" src="media/solo.JPG" />
-    </div> -->
-      <img
-        src="media/paper.jpg"
-        alt="Full Screen Image"
-        class="fullscreen-image"
-      />
     </div>
   </body>
 </html>
