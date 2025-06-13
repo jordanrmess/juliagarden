@@ -4,38 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julia Zone</title>
-    <link rel="icon" href="media/pencil-favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../media/pencil-favicon.png" type="image/x-icon" />
     <link href="../output.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="overflow-hidden">
-    <nav class="p-8">
+    <!-- Desktop Menu (hidden on mobile) -->
+    <nav class="hidden md:flex p-8 justify-center">
       <ul
         class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm tracking-wider"
       >
         <li>
-          <a class="text-white px-3 py-1" href="../index.html">home</a>
+          <a class="hover:underline px-3 py-1" href="../index.html">home</a>
         </li>
         <li>
-          <a class="text-white px-3 py-1" href="./fiction.html">fiction</a>
+          <a class="hover:underline px-3 py-1" href="./fiction.html">fiction</a>
         </li>
         <li>
-          <a class="text-white px-3 py-1" href="./bob.html">the bob</a>
+          <a class="hover:underline px-3 py-1" href="./bob.html">the bob</a>
         </li>
         <li>
-          <a class="text-white px-3 py-1" href="./blackstack.html"
+          <a class="hover:underline px-3 py-1" href="./blackstack.html"
             >black stack</a
           >
         </li>
         <li>
-          <a class="text-white px-3 py-1" href="./festival.html">festival</a>
+          <a class="hover:underline px-3 py-1" href="./festival.html"
+            >festival</a
+          >
         </li>
         <li>
-          <a class="text-white px-3 py-1" href="./children.html">children's</a>
+          <a class="hover:underline px-3 py-1" href="./children.html"
+            >children's</a
+          >
         </li>
       </ul>
     </nav>
-    <div class="grid md:grid-cols-2 gap-4 m-16">
+
+    <!-- Mobile Menu Button (visible on mobile) -->
+    <nav class="md:hidden flex justify-end p-4">
+      <button id="hamburger-button" class="relative z-50">
+        <svg
+          id="menu-open-icon"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          id="menu-close-icon"
+          class="h-6 w-6 hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Panel (initially invisible) -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-white/75 backdrop-blur-sm z-40 flex items-center justify-start px-12 opacity-0 invisible transition-opacity duration-300 ease-in-out md:hidden"
+    >
+      <ul class="text-left">
+        <li class="my-4">
+          <a class="text-2xl hover:underline px-3 py-1" href="../index.html"
+            >home</a
+          >
+        </li>
+        <li class="my-4">
+          <a class="text-2xl hover:underline px-3 py-1" href="./fiction.html"
+            >fiction</a
+          >
+        </li>
+        <li class="my-4">
+          <a class="text-2xl hover:underline px-3 py-1" href="./bob.html"
+            >the bob</a
+          >
+        </li>
+        <li class="my-4">
+          <a class="text-2xl hover:underline px-3 py-1" href="./blackstack.html"
+            >black stack</a
+          >
+        </li>
+        <li class="my-4">
+          <a class="text-2xl hover:underline px-3 py-1" href="./festival.html"
+            >festival</a
+          >
+        </li>
+        <li class="my-4">
+          <a class="text-2xl hover:underline px-3 py-1" href="./children.html"
+            >children's</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 m-10 md:m-16">
       <div class="md:mt-64 mt-20">
         <h1 class="md:text-4xl text-3xl font-medium text-left mb-6">
           <i>Dear Ellie, Love Franklin </i>is a picture book about change.
@@ -52,7 +136,7 @@
         </h3>
       </div>
       <div class="md:mt-65 mt-10">
-        <div class="w-64 md:w-89 md:ml-10">
+        <div class="w-48 md:w-89 ml-10">
           <div class="bg-white p-2 shadow-lg transform rotate-8">
             <img class="w-full" src="../julia garden images/franklin.PNG" />
           </div>
@@ -65,5 +149,19 @@
       alt="Full Screen Image"
       class="fullscreen-image"
     />
+    <script>
+      const hamburgerButton = document.getElementById("hamburger-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-open-icon");
+      const closeIcon = document.getElementById("menu-close-icon");
+
+      hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("invisible");
+        mobileMenu.classList.toggle("opacity-0");
+        openIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
+      });
+    </script>
   </body>
 </html>
