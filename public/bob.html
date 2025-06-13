@@ -9,55 +9,85 @@
     <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
   <body>
-    <nav class="p-4">
-      <ul class="flex justify-center space-x-4">
-        <li>
-          <a class="text-white hover:underline" href="../index.html">home</a>
-        </li>
-        <li>
-          <a class="text-white hover:underline" href="fiction.html">fiction</a>
-        </li>
-        <li>
-          <a class="text-white hover:underline" href="bob.html">the bob</a>
-        </li>
-        <li>
-          <a class="text-white hover:underline" href="blackstack.html"
-            >black stack</a
+    <div class="relative min-h-screen overflow-hidden">
+      <nav class="p-8">
+        <ul
+          class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm tracking-wider"
+        >
+          <li>
+            <a class="text-white px-3 py-1" href="./index.html">home</a>
+          </li>
+          <li>
+            <a class="text-white px-3 py-1" href="./public/fiction.html"
+              >fiction</a
+            >
+          </li>
+          <li>
+            <a class="text-white px-3 py-1" href="./public/bob.html">the bob</a>
+          </li>
+          <li>
+            <a class="text-white px-3 py-1" href="./public/blackstack.html"
+              >black stack</a
+            >
+          </li>
+          <li>
+            <a class="text-white px-3 py-1" href="./public/festival"
+              >festival</a
+            >
+          </li>
+          <li>
+            <a class="text-white px-3 py-1" href="./public/childrens"
+              >children's</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="grid md:grid-cols-2 gap-4 mt-64 m-16">
+        <div>
+          <h1 class="text-4xl font-medium text-left mb-6">
+            The Bob is Canada’s longest running sketch comedy revue.
+          </h1>
+          <p
+            class="font-(family-name:newsreader) text-2xl font-light text-left"
           >
-        </li>
-        <li>
-          <a class="text-white hover:underline" href="festival.html"
-            >festival</a
+            I spent three years as a staff writer for The Bob, and I directed
+            its 149th season.
+          </p>
+          <p class="text-1xl font-light text-left mt-6 pb-2">
+            I oversaw the writer’s room, managed production, and developed a
+            season-long brand identity. You can watch it
+            <a
+              class="underline"
+              href="https://youtu.be/-o3cRtfd3n8"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+        <div>
+          <div class="w-64 md:w-89 order-first md:order-last z-10 ml-10">
+            <div class="bg-white p-2 shadow-lg transform -rotate-6">
+              <img
+                class="w-full"
+                src="../julia garden images/thebobgroup.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="w-48 md:w-64 order-first md:order-last z-0 ml-40 not-even:md:ml-56"
           >
-        </li>
-        <li>
-          <a class="text-white hover:underline" href="children.html"
-            >children's</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <div class="grid md:grid-cols-2 gap-4 mt-64 m-16">
-      <div>
-        <h1 class="text-4xl font-medium text-left mb-6">
-          The Bob is Canada’s longest running sketch comedy revue.
-        </h1>
-        <p class="font-(family-name:newsreader) text-2xl font-light text-left">
-          I spent three years as a staff writer for The Bob, and I directed its
-          149th season.
-        </p>
-        <p class="text-1xl font-light text-left mt-6 pb-2">
-          I oversaw the writer’s room, managed production, and developed a
-          season-long brand identity.
-        </p>
+            <div class="bg-white p-2 shadow-lg transform rotate-8">
+              <img class="w-full" src="../julia garden images/ispybob.jpg" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div>test</div>
-    </div>
 
-    <img
-      src="../media/paper.jpg"
-      alt="Full Screen Image"
-      class="fullscreen-image"
-    />
+      <img
+        src="../media/paper.jpg"
+        alt="Full Screen Image"
+        class="fullscreen-image"
+      />
+    </div>
   </body>
 </html>
