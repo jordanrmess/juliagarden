@@ -8,7 +8,7 @@
     <link href="../output.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
-  <body>
+  <body class="overflow-hidden">
     <div class="relative min-h-screen">
       <nav class="p-8">
         <ul
@@ -40,11 +40,11 @@
       </nav>
       <div class="grid md:grid-cols-2 gap-4 m-16">
         <div class="md:mt-64 mt-20">
-          <h1 class="text-4xl font-medium text-left mb-6">
+          <h1 class="md:text-4xl text-3xl font-medium text-left mb-6">
             The Bob is Canada’s longest running sketch comedy revue.
           </h1>
           <p
-            class="font-(family-name:newsreader) text-2xl font-light text-left"
+            class="font-(family-name:newsreader) text-1xl md:text-2xl font-light text-left"
           >
             I spent three years as a staff writer for The Bob, and I directed
             its 149th season.
@@ -61,13 +61,15 @@
           </p>
         </div>
         <div>
-          <div class="w-64 md:w-89 order-first md:order-last z-10 ml-10">
-            <div class="bg-white p-2 shadow-lg transform -rotate-6">
+          <div class="w-64 md:w-89 order-first md:order-last z-10 md:ml-10">
+            <div
+              class="bg-white p-2 shadow-lg transform -rotate-6 hidden sm:block"
+            >
               <img class="w-full" src="../julia garden images/bobgroup.jpg" />
             </div>
           </div>
           <div
-            class="w-48 md:w-64 order-first md:order-last z-0 ml-40 not-even md:ml-56"
+            class="w-48 md:w-64 order-first md:order-last z-0 ml-10 not-even md:ml-56"
           >
             <div class="bg-white p-2 shadow-lg transform rotate-8">
               <img class="w-full" src="../julia garden images/ispybob.jpg" />

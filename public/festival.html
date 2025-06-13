@@ -8,7 +8,7 @@
     <link href="../output.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
-  <body>
+  <body class="overflow-hidden">
     <nav class="p-8">
       <ul
         class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm tracking-wider"
@@ -35,12 +35,12 @@
         </li>
       </ul>
     </nav>
-    <div class="grid md:grid-cols-2 gap-4 m-16">
+    <div class="overscroll-y-none grid md:grid-cols-2 gap-4 m-16">
       <div class="md:mt-64 mt-20">
-        <h1 class="text-4xl font-medium text-left mb-6">
+        <h1 class="md:text-4xl text-3xl font-medium text-left mb-6">
           My comedy scripts have been selected by festivals around the world.
         </h1>
-        <h3 class="font-(family-name:newsreader) text-2xl font-light text-left">
+        <h3 class="font-(family-name:newsreader) md:text-2xl text-1xl font-light text-left">
           My writing has appeared on screen and stage at the National Collegiate
           Comedy Festival, The Toronto Sketch Comedy Festival, and the Boom
           Chicago Comedy Festival in Amsterdam.
@@ -63,9 +63,9 @@
           here.
         </p>
       </div>
-      <div class="md:mt-40 mt-0">
-        <div class="w-64 md:w-89 ml-10">
-          <div class="bg-white p-2 shadow-lg transform rotate-8">
+      <div class="md:mt-64 mt-0">
+        <div class="w-64 md:w-89 md:ml-10">
+          <div class="bg-white p-2 shadow-lg transform md:rotate-8">
             <img
               class="w-full"
               src="../julia garden images/festivalpic.png"

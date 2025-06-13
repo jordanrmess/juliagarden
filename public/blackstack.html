@@ -8,7 +8,7 @@
     <link href="../output.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
-  <body class="md:overflow-hidden">
+  <body class="overflow-hidden">
     <div class="relative min-h-screen">
       <div class="absolute inset-0 flex flex-col px-4">
         <nav class="p-8">
@@ -44,11 +44,11 @@
 
         <div class="grid md:grid-cols-2 gap-4 m-16">
           <div class="md:mt-64 mt-20">
-            <h1 class="text-4xl font-medium text-left mb-6">
+            <h1 class="text-3xl md:text-4xl font-medium text-left mb-6">
               Black Stack is a play about online relationships.
             </h1>
             <h3
-              class="font-(family-name:newsreader) text-2xl font-light text-left"
+              class="font-(family-name:newsreader) text-1xl md:text-2xl font-light text-left"
             >
               I wrote Black Stack in 2022. It was performed in the Lorne
               Michaels Theatre.
@@ -68,17 +68,21 @@
               >
             </p>
           </div>
-          <div class="md:mt-20 mt-0">
-            <div class="w-64 md:w-89 ml-10">
-              <div class="bg-white p-2 shadow-lg transform">
+          <div>
+            <div class="w-48 md:w-89 order-first md:order-last z-10 md:ml-10">
+              <div class="bg-white p-2 shadow-lg transform -rotate-6">
                 <img
                   class="w-full"
                   src="../julia garden images/blackstackwindow.PNG"
                 />
               </div>
             </div>
-            <div class="w-64 md:w-72 ml-20 not-even md:ml-40">
-              <div class="bg-white p-2 shadow-lg transform rotate-8">
+            <div
+              class="w-40 md:w-64 order-first md:order-last z-0 ml-10 not-even md:ml-56"
+            >
+              <div
+                class="bg-white p-2 shadow-lg transform rotate-8 hidden sm:block"
+              >
                 <img class="w-full" src="../julia garden images/theatre.PNG" />
               </div>
             </div>
